@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Content-->
+    <LinearLayout
+
+        android:layout_margin="30dp"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Logo-->
+         <ImageView
+             android:layout_gravity="center_horizontal"
+             android:src="@drawable/education"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+        <!--User-->
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_action_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--Text-->
+            <EditText
+                android:inputType="text"
+                android:hint="User : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <!--Password-->
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Icon-->
+            <ImageView
+                android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_action_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <!--Text-->
+            <EditText
+                android:hint="Pass : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <!--Login-->
+            <Button
+
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Login" />
+
+
+        <!--Register-->
+            <Button
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/colorAccent"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Register" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
