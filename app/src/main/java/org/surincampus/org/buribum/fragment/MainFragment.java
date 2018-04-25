@@ -8,10 +8,31 @@ import android.support.v7.widget.ViewUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import org.surincampus.org.buribum.R;
 
 public class MainFragment extends Fragment{
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        // Register Controller call fragment
+
+        Button buttonView = getView().findViewById(R.id.btnRegister);
+
+        buttonView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+        // Replace Fragment
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.contentMainFragment,new RegisterFragment())
+                        .addToBackStack(null).commit();
+            }
+        });
+
+    }  //Main Method
 
     @Nullable
     @Override

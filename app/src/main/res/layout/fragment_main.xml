@@ -84,6 +84,8 @@
 
         <!--Register-->
             <Button
+                android:id="@+id/btnRegister"
+                android:clickable="true"
                 android:layout_margin="5dp"
                 android:padding="5dp"
                 android:background="@color/colorAccent"
